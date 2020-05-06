@@ -32,7 +32,7 @@ h4 { font-size:1rem;
      border-style: solid;
      border-color: #9c9c9c;
      border-width:2px;
-     margin:20px;
+     margin:25px;
      border-radius: 5px;}
 header h5 { font-size:0.8rem;
      color:#ffffff;
@@ -109,26 +109,34 @@ table, th,td {border: 1px solid #6a6a6a;
 tr:hover {background-color: #eee;}
 tr:nth-child(even) {}
 
-#tabletPC {display:none;}
-svg {width: 40px;}
-#menu_icon {display: block;
-            cursor: pointer;
-            padding: 0px;
-            position: absolute;
-            left: 10px;
-            z-index: 1000; }
-#drawer { display:block;
-          background:#ffffff;
-          height: 25%;
-          width: 40%;
-          position: absolute;
-          transition: all 0.2s linear;
-          transform: translateX(-100%);
-          top:0px;
-          border-radius: 10px;
-          opacity:0.85;
-          }
-#drawer.open { transform: translateX(0);}
+#tabletPC {display: none;
+  }
+svg {width: 40px;
+}
+
+#menu_icon {
+    display: block;
+    cursor: pointer;
+    padding: 0px;
+    position: absolute;
+    left: 20px;
+    z-index: 1000;
+  }
+
+#drawer {
+     display: block;
+     background-color: #ffffff;
+     height: 25%;
+     width: 50%;
+     position: absolute;
+     transition: all 0.5s linear;
+     transform: translateX(-110%);
+     top: 0px;
+     border-radius: 10px;
+     opacity: 0.90;
+  }
+#drawer.open { transform: translateX(0);
+  }
 
 .mySlides{display:none;
           text-align:center; }

@@ -12,6 +12,12 @@
    </head>
    <body>
       <header>
+        <a id="menu_icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="Gray"/>
+          </svg>
+        </a>
+
         <div id="drawer">
           <nav>
             <h4>Índice</h4>
@@ -23,17 +29,13 @@
            </ol>
           </nav>
         </div>
-        <a id="menu_icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
-          </svg>
-        </a>
 
         <h5>Design de Interação</h5>
         <h1>O que é o Espetro Eletromagnético?</h1>
         <p>Nesta página web estão presentes diversos documentos que proporcionam a explicação deste conceito físico e matemático.
         </p>
       </header>
+
       <nav id="tabletPC" class="col-1">
         <h4>Índice</h4>
         <ol>
@@ -252,16 +254,17 @@
       setTimeout(showSlides, 5000);
      }
 
-     let menu_icon=document.querySelector("#menu_icon");
-     let container=document.querySelector("#container");
-     let drawer=document.querySelector('#drawer');
+     let menu_icon = document.querySelector('#menu_icon');
+     let container = document.querySelector("#container");
+     let drawer = document.querySelector('#drawer');
 
-     menu_icon.addEventListener ("click", function (e) {
-     drawer.classList.toggle ("open");
-     e.stopPropagation (); });
-
-     container.addEventListener("click", function () {
-     drawer.classList.remove ("open"); });
+     menu_icon.addEventListener('click', function (e) {
+       drawer.classList.toggle('open');
+       e.stopPropagation();
+     });
+     container.addEventListener('click', function () {
+       drawer.classList.remove('open');
+     });
       </script>
    </body>
 </html>
